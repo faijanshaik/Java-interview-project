@@ -14,7 +14,7 @@ public class DequeMain {
 
           Deque(Double ended Queue) is extended by Queue interface and represents data structure
           that allows insertion and removing elements from Both ends  like adding and removing elements
-           from front and back as well, By default Deque follows LIFO,when adding and removing from Deque
+          from front and back as well, By default Deque follows LIFO,when adding and removing from Deque
 
            some common classes implemented by Deque are ArrayDeque,Linked list and concurrent Linked Deque
         */
@@ -29,6 +29,9 @@ public class DequeMain {
         // poll() remove the element at Head
         // pollFirst() remove the element at Head
         // Poll Last() remove the element at tail
+        // when trying to removing or investigating by using these methods like getFirst(),getLast(),removeFirst,removeLast(),Pop()
+        // then it throws NoSuchElementEception
+
 
         Deque deQue=new LinkedList();
         //Adding elements to the tail
