@@ -1,9 +1,6 @@
 package main.java.com.faijanshaikh;
 
-import java.util.Deque;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class DequeMain {
     public static void main(String[] args){
@@ -33,6 +30,7 @@ public class DequeMain {
         // then it throws NoSuchElementEception
 
 
+        WeakHashMap wh=new WeakHashMap();
         Deque deQue=new LinkedList();
         //Adding elements to the tail
         deQue.add("Apple");

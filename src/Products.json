@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "model": "Dell",
+    "price": 45000,
+    "inStock": true,
+    "rating": 4
+  },
+
+  {
+    "id":2,
+    "name": "Laptop",
+    "model": "Lenovo",
+    "price": 33500,
+    "inStock": false,
+    "rating": 3
+  },
+
+  {
+    "id":2,
+    "name": "Laptop",
+    "model": "Accer",
+    "price": 40000,
+    "inStock": false,
+    "rating": 3
+  }
+
+]
