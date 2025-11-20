@@ -12,6 +12,7 @@ public class CompletableExcepptionExample {
         try {
             object.getNumbersWithExceptionally();
             object.getNumbersWithHandleMethod();
+            object.getNumbersWithWhenCompleteMethod();
         } catch (Exception e) {
             System.out.println("Exception while getting numbers");
         }
