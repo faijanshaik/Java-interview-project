@@ -33,13 +33,27 @@ public class CompletableMainExample {
      5.get();   :-this method returns the result, blocks the main thread for result until the other threads completes their task
      6.runAsync(); :- this method takes the Runnable as parameter and exectues the task and doesn't return nothing(Void)
      7.supplyAsync(); :- this method takes the supplier as parameter and excutes the taks and returns the result of specific return type
-
-     some of methods of Completable Feature that supports exception Handling
+     8.join() :- this method is used to get the result similars to get(), it wraps the checked Exception inside the unchecked exception(Completion Exception)
+                 some of methods of Completable Feature that supports exception Handling
+     9.thenRun():- this method is usefull when you want do something after the completion of Future , it does not recieves the result of previous stage
      1.exceptionally(); :-Execptionally is one of the method that provides exception handling feature internally and it runs only when the exception
                        is raised and  it returns the fallback result instead of original result, it cannot return changed result
      2.handling(); :- this method is always executed , even execption is not raised, it can returns the changed result , returns the fallback result
                       when exception is raised , if not then return the original result
      3.whenComplete(); ; this method also always executed, even if exception  doesn't occurs ,and it doesn't retutn the result, is better for logging
 
+     -difference between get() and join()
+     -------------------------------------
+     get():
+     -------
+     1.get() method is used to get the result of future after completion,
+     2.blocks the thread until the Future completed
+     3.need try catch block or throws method signature
+
+    join():
+    --------
+    1. it is also used to get the result of Future after the completion
+    2. blocks the thread until the future completed and works similar to get
+    3. it wraps the checked exception inside the unchecked exception(Completion Exception)
     */
 }
