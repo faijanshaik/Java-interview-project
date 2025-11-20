@@ -8,7 +8,7 @@ import java.util.concurrent.ExecutionException;
 public class CompletableMainExample {
     public static void main(String[]  args) throws ExecutionException, InterruptedException {
         ProductService service = new ProductService(new ProductRepository(new ObjectMapper()));
-        File jsonFile = new File("D:/development/WS-4/Java-interview-project/src/Products.json");
+        File jsonFile = new File("D:/development/WS-6/Java-interview-project/src/Products.json");
       //  service.saveProducts(jsonFile);
 
        // service.getProducts(jsonFile);
