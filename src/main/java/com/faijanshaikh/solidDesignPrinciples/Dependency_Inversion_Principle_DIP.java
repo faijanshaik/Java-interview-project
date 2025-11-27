@@ -24,7 +24,7 @@ class EmailService {
 }
 
 class Notification {
-    private EmailService emailService;
+    private EmailService emailService; // The Notification clas holding reference of EmailService which is tightly coupled and this highlevel module depends on other low level module
 
     public Notification(EmailService emailService) {
         this.emailService = emailService;
